@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles -->
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -17,24 +22,160 @@
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia|Space+Mono"
+      href="https://fonts.googleapis.com/css?family=Mynerve|Space+Mono"
     />
     <!-- My styles -->
     <link rel="stylesheet" href="./style.css" />
     <title>Phiponacci | Portfolio</title>
   </head>
-  <body class="container">
-    <header>
-      <span class="greeting display-2 ff-space-mono m-2 p-2"></span>
-      <br />
-      <ul class="list-unstyled jobs"></ul>
+  <body id="body">
+    <header class="container sticky-top fixed-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark my-3 rounded-0 p-3"
+      >
+        <div class="container-fluid">
+          <div class="display-4 fw-bolder ff-mynerve text-white">
+            Leo Phiponacci
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            id="navbarNav"
+            class="collapse navbar-collapse justify-content-end"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="about-link" class="nav-link" href="#about">
+                  <div class="h4 fw-bold ff-mynerve">About</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="skills-link" class="nav-link" href="#skills">
+                  <div class="h4 fw-bold ff-mynerve">Skills</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">
+                  <div class="h4 fw-bold ff-mynerve">Projects</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  <div class="h4 fw-bold ff-mynerve">Contact</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="container text-center">
+      <section id="about" class="min-vh-100">
+        <span class="greeting display-2 ff-space-mono m-2 p-2"></span>
+        <br />
+        <ul class="list-unstyled jobs"></ul>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div>
+          <h4>Programming Languages</h4>
+          <ul class="list-unstyled">
+            <li>Python</li>
+            <li>C#</li>
+            <li>Kotlin</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Frameworks</h4>
+          <ul class="list-unstyled">
+            <li>Python: Django, Fast API & Flask</li>
+            <li>C#: ASP.NET Core MVC, Razor Pages, Web API & Minimal API</li>
+            <li>Kotlin: Android with Android Jetpack components</li>
+            <li>Java: JavaFX, Swing & Spring Boot</li>
+            <li>JavaScript: JQuery, React & Vue</li>
+          </ul>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+      </section>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div>
+          <label>Email</label>
+          <a href="mailto:leo.phibonacci@gmail.com" title="Gmail"
+            >leo.phibonacci</a
+          >
+        </div>
+      </section>
+      <a
+        class="float-end btn btn-dark fixed-bottom position-sticky position-fixed rounded-0 m-0"
+        href="#body"
+      >
+        <i class="bi bi-arrow-up"></i>
+      </a>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="w-100 mx-auto">
+          <ul class="list-inline">
+            <li class="list-inline-item" title="Facebook">
+              <a
+                target="_blank"
+                href="https://web.facebook.com/people/Leo-Phiponacci-Freelance-Corner/100090559292401/"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </li>
+            <li class="list-inline-item" title="Instagram">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/leo_phiponacci/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+
+            <li class="list-inline-item" title="YouTube">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCVN5JGlWKyjnMFfT2F2Vr9A"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </li>
+            <li class="list-inline-item" title="Linkedin">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/leonardo-fibonacci-147227232/"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li class="list-inline-item" title="Github">
+              <a target="_blank" href="https://github.com/Phiponacci"
+                ><i class="bi bi-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!-- Scripts -->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Masonry.js -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
