@@ -1,5 +1,5 @@
-.ff-mynerve {
-    font-family: "Mynerve", sans-serif;
+.ff-sofia {
+    font-family: "Sofia", sans-serif;
 }
 
 .ff-space-mono {
@@ -28,4 +28,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+.social-buttons {
+    position: fixed;
+    top: 40%;
+    left: 5%;
 }

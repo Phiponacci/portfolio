@@ -17,12 +17,17 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- Flickity -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <!-- Animate On Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Mynerve|Space+Mono"
+      href="https://fonts.googleapis.com/css?family=Sofia|Space+Mono"
     />
     <!-- My styles -->
     <link rel="stylesheet" href="./style.css" />
@@ -34,7 +39,7 @@
         class="navbar navbar-expand-lg navbar-dark bg-dark my-3 rounded-0 p-3"
       >
         <div class="container-fluid">
-          <div class="display-4 fw-bolder ff-mynerve text-white">
+          <div class="display-4 fw-bolder ff-sofia text-white">
             Leo Phiponacci
           </div>
           <button
@@ -54,23 +59,18 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a id="about-link" class="nav-link" href="#about">
-                  <div class="h4 fw-bold ff-mynerve">About</div>
+                <a id="about-link" class="nav-link" href="#body">
+                  <div class="h4 fw-bold ff-sofia">About</div>
                 </a>
               </li>
               <li class="nav-item">
                 <a id="skills-link" class="nav-link" href="#skills">
-                  <div class="h4 fw-bold ff-mynerve">Skills</div>
+                  <div class="h4 fw-bold ff-sofia">Skills</div>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#projects">
-                  <div class="h4 fw-bold ff-mynerve">Projects</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  <div class="h4 fw-bold ff-mynerve">Contact</div>
+                  <div class="h4 fw-bold ff-sofia">Projects</div>
                 </a>
               </li>
             </ul>
@@ -78,16 +78,16 @@
         </div>
       </nav>
     </header>
-    <main class="container text-center">
-      <section id="about" class="min-vh-100">
+    <main class="container text-center ff-space-mono">
+      <section id="about" class="vh-100">
         <span class="greeting display-2 ff-space-mono m-2 p-2"></span>
         <br />
         <ul class="list-unstyled jobs"></ul>
       </section>
       <section id="skills">
-        <h3>Skills</h3>
+        <h2 class="fw-bolder">Skills</h2>
         <div>
-          <h4>Programming Languages</h4>
+          <h4 class="fw-bolder">Programming Languages</h4>
           <ul class="list-unstyled">
             <li>Python</li>
             <li>C#</li>
@@ -97,27 +97,33 @@
           </ul>
         </div>
         <div>
-          <h4>Frameworks</h4>
+          <h4 class="fw-bolder">Frameworks</h4>
           <ul class="list-unstyled">
-            <li>Python: Django, Fast API & Flask</li>
-            <li>C#: ASP.NET Core MVC, Razor Pages, Web API & Minimal API</li>
-            <li>Kotlin: Android with Android Jetpack components</li>
-            <li>Java: JavaFX, Swing & Spring Boot</li>
-            <li>JavaScript: JQuery, React & Vue</li>
+            <li class="py-2">
+              <span class="fw-bold bg-success-subtle">Python</span>: Django,
+              Fast API & Flask
+            </li>
+            <li class="py-2">
+              <span class="fw-bold bg-success-subtle">C#</span>: ASP.NET Core
+              MVC, Razor Pages, Web API & Minimal API
+            </li>
+            <li class="py-2">
+              <span class="fw-bold bg-success-subtle">Kotlin</span>: Android
+              with Android Jetpack components
+            </li>
+            <li class="py-2">
+              <span class="fw-bold bg-success-subtle">Java</span>: JavaFX, Swing
+              & Spring Boot
+            </li>
+            <li class="py-2">
+              <span class="fw-bold bg-success-subtle">JavaScript</span>: JQuery,
+              React & Vue
+            </li>
           </ul>
         </div>
       </section>
       <section id="projects">
-        <h3>Projects</h3>
-      </section>
-      <section id="contact">
-        <h3>Contact</h3>
-        <div>
-          <label>Email</label>
-          <a href="mailto:leo.phibonacci@gmail.com" title="Gmail"
-            >leo.phibonacci</a
-          >
-        </div>
+        <h2 class="fw-bolder">Projects</h2>
       </section>
       <a
         class="float-end btn btn-dark fixed-bottom position-sticky position-fixed rounded-0 m-0"
@@ -125,49 +131,47 @@
       >
         <i class="bi bi-arrow-up"></i>
       </a>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="w-100 mx-auto">
-          <ul class="list-inline">
-            <li class="list-inline-item" title="Facebook">
-              <a
-                target="_blank"
-                href="https://web.facebook.com/people/Leo-Phiponacci-Freelance-Corner/100090559292401/"
-                ><i class="bi bi-facebook"></i
-              ></a>
-            </li>
-            <li class="list-inline-item" title="Instagram">
-              <a
-                target="_blank"
-                href="https://www.instagram.com/leo_phiponacci/"
-                ><i class="bi bi-instagram"></i
-              ></a>
-            </li>
+      <ul class="list-unstyled social-buttons">
+        <li class="list-item my-2" title="Facebook">
+          <a
+            target="_blank"
+            href="https://web.facebook.com/people/Leo-Phiponacci-Freelance-Corner/100090559292401/"
+            ><i class="bi bi-facebook"></i
+          ></a>
+        </li>
+        <li class="list-item my-2" title="Instagram">
+          <a target="_blank" href="https://www.instagram.com/leo_phiponacci/"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </li>
 
-            <li class="list-inline-item" title="YouTube">
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCVN5JGlWKyjnMFfT2F2Vr9A"
-                ><i class="bi bi-youtube"></i
-              ></a>
-            </li>
-            <li class="list-inline-item" title="Linkedin">
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/leonardo-fibonacci-147227232/"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </li>
-            <li class="list-inline-item" title="Github">
-              <a target="_blank" href="https://github.com/Phiponacci"
-                ><i class="bi bi-github"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+        <li class="list-item my-2" title="YouTube">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCVN5JGlWKyjnMFfT2F2Vr9A"
+            ><i class="bi bi-youtube"></i
+          ></a>
+        </li>
+        <li class="list-item my-2" title="Linkedin">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/leonardo-fibonacci-147227232/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </li>
+        <li class="list-item my-2" title="Github">
+          <a target="_blank" href="https://github.com/Phiponacci"
+            ><i class="bi bi-github"></i
+          ></a>
+        </li>
+        <li class="list-item my-2" title="Mail">
+          <a target="_blank" href="mailto:leo.phibonacci@gmail.com">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
 
     <!-- Scripts -->
     <!-- JQuery -->
@@ -176,12 +180,15 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Masonry.js -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- Animate On Scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- My scripts -->

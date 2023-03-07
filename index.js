@@ -1,10 +1,10 @@
 var options = {
   strings: [
-    `<h2 class="ff-mynerve fw-bolder my-5">I am <span class="bg-dark px-1 text-white fw-bolder">Leo</span>, here is a brief description about me</h2>
-            <li class="h3 ff-mynerve ms-2 fw-bold">Exprienced Software Engineer</li>
-            <li class="h3 ff-mynerve ms-2 fw-bold">Full Stack Developer</li>
-            <li class="h3 ff-mynerve ms-2 fw-bold">Working on <a id="fiverr-link" target="_blank" href="https://www.fiverr.com/phiponatchi" class="bg-success text-white px-1 text-decoration-none">fiverr</a> and <a target="_blank" href="https://www.upwork.com/freelancers/~01556fb0a54a5fa971" class="text-white px-1 text-decoration-none" style="background-color: #108d00">Upwork</a></li>
-            <li class="h3 ff-mynerve ms-2 fw-bold">I did many software projects, and contributed in others</li>`,
+    `<h2 class="ff-sofia fw-bolder my-5">I am <span class="bg-dark ps-3 pe-1 text-white fw-bolder">Leo</span>, here is a brief description about me</h2>
+            <li class="h3 ff-sofia ms-2 fw-bold">Exprienced Software Engineer</li>
+            <li class="h3 ff-sofia ms-2 fw-bold">Full Stack Developer</li>
+            <li class="h3 ff-sofia ms-2 fw-bold">Working on <a id="fiverr-link" target="_blank" href="https://www.fiverr.com/phiponatchi" class="bg-success text-white px-1 text-decoration-none">fiverr</a> and <a target="_blank" href="https://www.upwork.com/freelancers/~01556fb0a54a5fa971" class="text-white px-1 text-decoration-none" style="background-color: #108d00">Upwork</a></li>
+            <li class="h3 ff-sofia ms-2 fw-bold">I did many software projects, and contributed in others</li>`,
   ],
   typeSpeed: 30,
   cursorChar: "",
@@ -18,7 +18,7 @@ briefDesc.stop();
 
 var greetingOptions = {
   strings: [
-    `<code class='bg-dark text-danger'>print("Hello, World!")</code>`,
+    `<code class='bg-dark text-white-50'> >>> print(<code class="text-warning">"Hello, World!"</code>)</code>`,
     "Hello, World!",
   ],
   typeSpeed: 100,
@@ -48,7 +48,7 @@ $(document).ready(function () {
         {
           scrollTop: $(hash).offset().top,
         },
-        800,
+        1200,
         function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
