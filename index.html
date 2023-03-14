@@ -4,34 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="iDM4PdCyCKjl1wvdnaZJpGT0KsV56UrDSD2q1fv6N48" />
+    <meta
+      name="google-site-verification"
+      content="iDM4PdCyCKjl1wvdnaZJpGT0KsV56UrDSD2q1fv6N48"
+    />
+    <meta
+      name="description"
+      content="Welcome to my developer portfolio! I am a skilled developer with experience in building dynamic and responsive websites and applications. Browse through my projects and discover how I use the latest technologies to create seamless user experiences. Contact me to collaborate on your next project."
+    />
     <!-- Styles -->
     <!-- Bootstrap icons -->
     <link
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
     <!-- Flickity -->
     <link
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
     <!-- Animate On Scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <!-- Google Fonts -->
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Sofia|Space+Mono"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css?family=Sofia|Space+Mono:wght@400&display=swap"
     />
     <!-- My styles -->
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="./style.css"
+    />
     <title>Phiponacci | Portfolio</title>
   </head>
   <body id="body">
@@ -40,9 +65,9 @@
         class="navbar navbar-expand-lg navbar-dark bg-dark my-3 rounded-0 p-3"
       >
         <div class="container-fluid">
-          <div class="display-4 fw-bolder ff-sofia text-white">
+          <h1 class="fw-bolder ff-sofia text-white">
             Leo Phiponacci
-          </div>
+          </h1>
           <button
             class="navbar-toggler"
             type="button"
@@ -60,17 +85,31 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a id="about-link" class="nav-link" href="#body">
+                <a
+                  aria-label="top-button"
+                  id="about-link"
+                  class="nav-link"
+                  href="#body"
+                >
                   <div class="h4 fw-bold ff-sofia">About</div>
                 </a>
               </li>
               <li class="nav-item">
-                <a id="skills-link" class="nav-link" href="#skills">
+                <a
+                  aria-label="skills-button"
+                  id="skills-link"
+                  class="nav-link"
+                  href="#skills"
+                >
                   <div class="h4 fw-bold ff-sofia">Skills</div>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">
+                <a
+                  aria-label="projects-button"
+                  class="nav-link"
+                  href="#projects"
+                >
                   <div class="h4 fw-bold ff-sofia">Projects</div>
                 </a>
               </li>
@@ -88,7 +127,7 @@
       <section id="skills">
         <h2 class="fw-bolder">Skills</h2>
         <div>
-          <h4 class="fw-bolder">Programming Languages</h4>
+          <h3 class="fw-bolder h4">Programming Languages</h3>
           <ul class="list-unstyled">
             <li>Python</li>
             <li>C#</li>
@@ -98,7 +137,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="fw-bolder">Frameworks</h4>
+          <h3 class="fw-bolder h4">Frameworks</h3>
           <ul class="list-unstyled">
             <li class="py-2">
               <span class="fw-bold bg-success-subtle">Python</span>: Django,
@@ -127,6 +166,7 @@
         <h2 class="fw-bolder">Projects</h2>
       </section>
       <a
+        aria-label="return-to-top"
         class="float-end btn btn-dark fixed-bottom position-sticky position-fixed rounded-0 m-0"
         href="#body"
       >
@@ -136,12 +176,16 @@
         <li class="list-item my-2" title="Facebook">
           <a
             target="_blank"
+            aria-label="facebook"
             href="https://web.facebook.com/people/Leo-Phiponacci-Freelance-Corner/100090559292401/"
             ><i class="bi bi-facebook"></i
           ></a>
         </li>
         <li class="list-item my-2" title="Instagram">
-          <a target="_blank" href="https://www.instagram.com/leo_phiponacci/"
+          <a
+            target="_blank"
+            aria-label="instagram"
+            href="https://www.instagram.com/leo_phiponacci/"
             ><i class="bi bi-instagram"></i
           ></a>
         </li>
@@ -149,6 +193,7 @@
         <li class="list-item my-2" title="YouTube">
           <a
             target="_blank"
+            aria-label="youtube"
             href="https://www.youtube.com/channel/UCVN5JGlWKyjnMFfT2F2Vr9A"
             ><i class="bi bi-youtube"></i
           ></a>
@@ -156,17 +201,25 @@
         <li class="list-item my-2" title="Linkedin">
           <a
             target="_blank"
+            aria-label="linkedin"
             href="https://www.linkedin.com/in/leonardo-fibonacci-147227232/"
             ><i class="bi bi-linkedin"></i
           ></a>
         </li>
         <li class="list-item my-2" title="Github">
-          <a target="_blank" href="https://github.com/Phiponacci"
+          <a
+            target="_blank"
+            aria-label="github"
+            href="https://github.com/Phiponacci"
             ><i class="bi bi-github"></i
           ></a>
         </li>
         <li class="list-item my-2" title="Mail">
-          <a target="_blank" href="mailto:leo.phibonacci@gmail.com">
+          <a
+            target="_blank"
+            aria-label="gmail"
+            href="mailto:leo.phibonacci@gmail.com"
+          >
             <i class="bi bi-envelope"></i>
           </a>
         </li>
@@ -180,18 +233,25 @@
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Masonry.js -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script
+      async
+      src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"
+    ></script>
 
     <!-- Bootstrap -->
     <script
+      async
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
     <!-- Flickity -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script
+      async
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+    ></script>
     <!-- Animate On Scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- My scripts -->
     <script src="./index.js"></script>
   </body>

@@ -1,9 +1,11 @@
 .ff-sofia {
     font-family: "Sofia", sans-serif;
+    font-display: swap;
 }
 
 .ff-space-mono {
     font-family: "Space Mono", sans-serif;
+    font-display: swap;
 }
 
 /* Style the scrollbar track */

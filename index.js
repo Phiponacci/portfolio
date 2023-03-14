@@ -3,7 +3,7 @@ var options = {
     `<h2 class="ff-sofia fw-bolder my-5">I am <span class="bg-dark ps-3 pe-1 text-white fw-bolder">Leo</span>, here is a brief description about me</h2>
             <li class="h3 ff-sofia ms-2 fw-bold">Exprienced Software Engineer</li>
             <li class="h3 ff-sofia ms-2 fw-bold">Full Stack Developer</li>
-            <li class="h3 ff-sofia ms-2 fw-bold">Working on <a id="fiverr-link" target="_blank" href="https://www.fiverr.com/phiponatchi" class="bg-success text-white px-1 text-decoration-none">fiverr</a> and <a target="_blank" href="https://www.upwork.com/freelancers/~01556fb0a54a5fa971" class="text-white px-1 text-decoration-none" style="background-color: #108d00">Upwork</a></li>
+            <li class="h3 ff-sofia ms-2 fw-bold">Working on <a id="fiverr-link" aria-label="fiverr" target="_blank" href="https://www.fiverr.com/phiponatchi" class="bg-success text-white px-1 text-decoration-none">fiverr</a> and <a target="_blank" aria-label="upwork" href="https://www.upwork.com/freelancers/~01556fb0a54a5fa971" class="text-white px-1 text-decoration-none" style="background-color: #108d00">Upwork</a></li>
             <li class="h3 ff-sofia ms-2 fw-bold">I did many software projects, and contributed in others</li>`,
   ],
   typeSpeed: 30,
